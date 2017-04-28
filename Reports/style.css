@@ -1,0 +1,321 @@
+h1 {
+	color:mediumblue;
+	font-family:verdana;
+	font-size:100%; 
+}
+
+#StatusBlock{
+	margin: 15px 0;
+  	border: 1px solid black;
+	display: block
+	width: 25%;
+}
+
+#Passed,#Fail,#Warning{
+	width: 15%
+	text-align: center-right;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+}
+
+#data{
+	width: 10%
+	background-color: white;
+	text-align: center;
+	color: black;
+}
+
+.summary {
+  	margin: 15px 0;
+  	border: 1px solid black;
+	table-layout: fixed;
+	display: table;
+  	width: 25%; /* must have this set */
+	word-wrap:break-word;
+}
+
+table {
+  	margin: 15px 0;
+  	border: 1px solid black;
+	table-layout: fixed;
+	display: table;
+  	width: 100%; /* must have this set */
+	word-wrap:break-word;
+}
+
+.suite th:nth-child(1)
+{
+  	width: 4%;
+	text-overflow: ellipsis;
+}
+
+
+.suite th:nth-child(6){
+  	width: 6%;
+	text-overflow: ellipsis;
+}
+
+.suite th:nth-child(2),
+.suite th:nth-child(3) {
+  	width: 15%;
+	text-overflow: ellipsis;
+
+}
+
+.suite th:nth-child(4) {
+  	width: 20%;
+	text-overflow: ellipsis;
+
+}
+
+.suite th:nth-child(5){
+  	width: 10%;
+	text-overflow: ellipsis;
+
+}
+
+.suite th:nth-child(7),
+.suite th:nth-child(8) {
+  	width: 11%;
+	text-overflow: ellipsis;
+
+}
+
+.suite th:nth-child(9){
+  	width: 8%;
+	text-overflow: ellipsis;
+
+}
+
+
+.suite td:nth-child(1)
+{
+  	width: 4%;
+	text-overflow: ellipsis;
+}
+
+
+.suite td:nth-child(6){
+  	width: 6%;
+	text-overflow: ellipsis;
+}
+
+.suite td:nth-child(2),
+.suite td:nth-child(3) {
+  	width: 15%;
+	text-overflow: ellipsis;
+
+}
+
+.suite td:nth-child(4) {
+  	width: 20%;
+	text-overflow: ellipsis;
+
+}
+
+.suite td:nth-child(5){
+  	width: 10%;
+	text-overflow: ellipsis;
+
+}
+
+.suite td:nth-child(7),
+.suite td:nth-child(8) {
+  	width: 11%;
+	text-overflow: ellipsis;
+
+}
+
+.suite td:nth-child(9){
+  	width: 8%;
+	text-overflow: ellipsis;
+
+}
+
+.steps td:nth-child(1)
+
+{
+  	widtd: 4%;
+	text-overflow: ellipsis;
+}
+
+
+.steps td:nth-child(2)
+{
+  	widtd: 8%;
+	text-overflow: ellipsis;
+}
+
+.steps td:nth-child(3)
+
+{
+  	widtd: 8%;
+	text-overflow: ellipsis;
+}
+
+.steps td:nth-child(4),
+.steps td:nth-child(5),
+.steps td:nth-child(6)
+
+{
+  	widtd: 17%;
+	text-overflow: ellipsis;
+}
+
+.steps td:nth-child(7),
+.steps td:nth-child(9),
+.steps td:nth-child(10)
+{
+  	widtd: 5%;
+	text-overflow: ellipsis;
+}
+
+
+
+.steps td:nth-child(8)
+{
+  	widtd: 8%;
+	text-overflow: ellipsis;
+}
+
+.steps th:nth-child(1)
+
+{
+  	width: 4%;
+	text-overflow: ellipsis;
+}
+
+
+.steps th:nth-child(2)
+{
+  	width: 8%;
+	text-overflow: ellipsis;
+}
+
+.steps th:nth-child(3)
+
+{
+  	width: 8%;
+	text-overflow: ellipsis;
+}
+
+.steps th:nth-child(4),
+.steps th:nth-child(5),
+.steps th:nth-child(6)
+
+{
+  	width: 17%;
+	text-overflow: ellipsis;
+}
+
+.steps th:nth-child(7),
+.steps th:nth-child(9),
+.steps th:nth-child(10)
+{
+  	width: 5%;
+	text-overflow: ellipsis;
+}
+
+.steps th:nth-child(8)
+{
+  	width: 8%;
+	text-overflow: ellipsis;
+}
+
+html {
+  	background: #ccc;
+}
+
+body{
+  	margin: 0 auto;
+  	background: white;
+  	padding: 10px;
+}
+
+sf  {
+	color:red;
+	font-weight: bold;
+	font-family:courier;
+	font-size:100%;
+}
+
+sp  {
+	color: limegreen;
+    font-weight: bold;
+	font-family:courier;
+	font-size:100%;
+}
+
+sw  {
+	color:darkorange;
+	font-weight: bold;
+	font-family:courier;
+	font-size:100%;
+}
+
+sln  {
+	text-align: center;
+	color:black;
+	font-family:courier;
+	font-size:100%;
+}
+
+htd  {
+	text-align: center;
+	font-weight: bold;
+	border: medium none;
+	color:#FFFFFF;
+	border-style: medium;
+	font-family:courier;
+	font-size:100%;
+}
+
+.headerRow{
+	background-color: royalblue; 
+	border: medium none;
+	font-weight: bold;
+	margin: 1px;
+	padding: 3px;
+	max-height: inherit;
+	min-height: inherit;
+	text-overflow: inherit;
+
+}
+
+.dataRow{ 
+	border-color: gainsboro;
+	border: thin solid;
+    	margin: 1px;
+    	padding: 3px;
+}
+
+.even{
+	background-color: ghostwhite;
+}
+
+.odd{
+	background-color: white;
+}
+
+tr{
+	display: table-row;
+}
+
+th,td  {
+	text-align: left;
+	border-color: gainsboro;
+	border: thin solid;
+	font-family:courier;
+	font-size: 100%;
+	margin: 1px;
+	padding: 3px;
+}
+
+th  {
+	color: white;
+}
+
+td  {
+	color: black;
+}

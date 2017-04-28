@@ -1,0 +1,35 @@
+Use the jar file in this folder and then follow these steps:
+
+7.  Copy JDBC.jar to your JDK8 or JRE8 lib\ext folder
+8. Copy   jdbcodbc.dll from JRE\bin  of your JRE 7 installation to JRE\bin of your JRE 8 installation.
+9. Restart your JVM.
+
+
+Detailed Steps:
+P.S. This is just for reference, the first 6 steps have been used 
+to create the jar, so if you have that you can skip 1-6
+-------------------------------------------
+
+Reference Link:
+http://bigfatball.blogspot.in/2016/03/how-to-enable-jdbc-odbc-bridge-for-jdk-8.html
+
+Steps to Port:
+
+How to enable JDBC-ODBC bridge for JDK 8
+So JDK8 has removed JDBC-ODBC bridge, for whatever the reason. But if you don't have the source code of your existing product and don't want to spend time to reverse engineering them,  they just don't work in JRE 8.  
+
+Are you stuck with JRE 7 or older forever? Not necessarily. Follow the step below, you can enable JDBC-ODBC bridge in JDK 8. 
+
+1. Download a JDK 7 or JRE 7. 
+2. Goto JRE\lib folder and find the rt.jar
+3. Unzip it (if you have WinRAR installed) or you can rename it to rt.zip and unzip it.
+4. Copy sun\jdbc and sun\security\action folders out, keep the folder structure. i.e., you should have the folder structure like below:
+Sun --> Security --> Action
+       --> JDBC
+5. Open a CMD window. Go to the parent folder of Sun folder. Run the command:
+jar -cvf jdbc.jar sun
+
+6. The above command will create a file named jdbc.jar
+7.  Copy JDBC.jar to your JDK8 or JRE8 lib\ext folder
+8. Copy   jdbcodbc.dll from JRE\bin  of your JRE 7 installation to JRE\bin of your JRE 8 installation.
+9. Restart your JVM.
