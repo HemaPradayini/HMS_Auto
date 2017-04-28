@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+    	<!-- TS14 -->
+    	<class name="e2e.OPWorkflowForMultiInsurancePatient"/>
+		<!-- TS17 -->
+		<class name="e2e.OPWorkflowWithCorporateInsurance"/>
+    	<!-- TS19 -->
+        <class name="e2e.IPWorkFlowWithWardActivities"/>
+        <!-- TS21 -->
+        <class name="e2e.IPWorkflowByOrderingAllItemsFromWA"/>
+        <!-- TS22 -->
+        <class name="e2e.IPWFWithTestConductionAndReconduction"/>
+        <!-- TS23 -->
+        <class name="e2e.IPWorkflowForMultiInsurancePatient"/>
+        <!-- TS24 -->
+        <class name="e2e.DayCareToIPWorkFlow"/>
+        <!-- TS26 -->
+        <class name="e2e.IPWorkFlowWithAdvanceOT"/>
+        <!-- TS29 -->
+        <class name="e2e.IPWFForInsPatientWithoutCopay"/>
+        <!-- TS31 -->
+        <class name="e2e.IPWFForInsurancePatientWithResubmission"/>
+        <!-- TS49 -->
+        <class name="e2e.OPWorkFlowWithDeposit"/>
+        <!-- TS50 -->
+        <class name="e2e.IPWorkFlowWithDeposit"/>
+        <!-- TS67 -->
+        <class name="e2e.DietaryWorkflow"/>
+        <!-- TS75 -->
+        <class name="e2e.MRDWorkFlow"/>
+		<!--TS88 -->
+        <class name="e2e.INVCenterWiseSalesIssues"/>
+		<!-- AB -->
+		 <class name="e2e.ReadmitWorkflow"/>
+        <class name="e2e.EAndMWorkflow"/>
+        <class name="e2e.RosterWorkFlow"/>
+        <class name="e2e.IncomingRegistrationWorkFlow"/>
+        <class name="e2e.OPWorkflowForInsurancePatientWithCashBill"/>
+        <class name="e2e.OPWorkFlowForRevisit"/>
+        <class name="e2e.OPWorkFlowForFollowUpVisit"/>
+        <class name="e2e.RegistrationFollowupSameDoctorWorkflow"/>
+        <class name="e2e.RegistrationFollowupDifferentDoctor"/>
+        <class name="e2e.OPCashWorkflowWithDiscountPlan"/>
+        <class name="e2e.INSObservationPresentInHAADClaims"/> 
+		<!-- HE -->
+		<class name="e2e.INSSubmissionBatchCreationWhenAllCentersSameCompanyNameIsNFromSpecificCenter"/>
+        <class name="e2e.NonTaxschemaSales"/>
+        <class name="e2e.MultiVisitPackageWorkFlow"/>
+        <class name="e2e.DynaPackageWorkflow"/>
+        <class name="e2e.AdvancedPacakgesWorkflow"/>
+        <class name="e2e.PaymentsWorkflow"/>
+		<!-- RE -->
+		<class name="e2e.OPInsuranceWorkflowWithDiscountPlan"/>
+        <class name="e2e.OPInsuranceWithChangePatientCategory"/>
+        <class name="e2e.INSSubmissionBatchCreationWhenAllCentersSameCompanyNameIsNFromDefaultCenter"/>
+        <class name="e2e.WorkFlowForPatientFeedback"/>
+		<class name="e2e.INSObservationPresentInDHAClaims"/>
+        <class name="e2e.OPWorkFlowForDental"/>
+        <class name="e2e.OPWorkflowWithRewardPoints"/>
+        <class name="e2e.DialysisWorkflow"/>
+        <class name="e2e.OPWorkFlowWithOperation"/>
+		<!-- TE -->
+		<!--TS_008-->
+        <class name="e2e.OPWorkflowInCenterSchema"/>     
+		<!--TS_032-->
+        <class name="e2e.OSPWorkFlowForCashPatient"/>
+		<!--TS_033-->        
+		<class name="e2e.OSPWorkFlowForInsurance"/>
+		<!--TS_007-->        
+		<class name="e2e.OPWorkflowCashPatChngPatCat"/>
+		<!--TS_016-->		
+        <class name="e2e.OPWorkFlowForInsurance"/>        
+		<!--TS_053-->		
+        <class name="e2e.QuickEstimateWorkflow"/>             
+		<!--TS_003-->		
+       	<class name="e2e.OPWorkFlowForCashPatient"/>
+		<!--TS_001-->		
+        <class name="e2e.OPWorkFlowForBillNow"/>
+		<!--TS_002-->		
+        <class name="e2e.OPWorkFlowForCreditPatient"/>
+		<!--TS_011-->		
+        <class name="e2e.OPWorkflowForCashToInsurance"/>
+		<!--TS_070-->		
+        <class name="e2e.PriorAuthWorkflow"/>       
+		<!--TS_034-->		
+        <class name="e2e.OPToIPWorkflowWithCopyChargesBillAction"/>     
+		<!--TS_037-->		
+        <class name="e2e.OPToIPWorkflowWithInsuranceCopyChargesBillAction"/> 
+        <!--include></include>
+        <exclude>P2</exclude-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
