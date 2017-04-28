@@ -1,8 +1,5 @@
 package reusableFunctions;
 
-import keywords.SeleniumActions;
-import keywords.SeleniumVerifications;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,6 +12,8 @@ import genericFunctions.DbFunctions;
 import genericFunctions.EnvironmentSetup;
 import seleniumWebUIFunctions.KeywordSelectionLibrary;
 import seleniumWebUIFunctions.VerificationFunctions;
+import supportedKeywords.SeleniumActions;
+import supportedKeywords.SeleniumVerifications;
 
 public class PatientVisit {
 	KeywordSelectionLibrary executeStep;
@@ -119,7 +118,11 @@ public class PatientVisit {
 
 		executeStep.performAction(SeleniumActions.Select, "NewRatePlan","PatientCategoryChngPatientRatePlan");
 		verifications.verify(SeleniumVerifications.Selected, "NewRatePlan","PatientCategoryChngPatientRatePlan",false);
-		
+		//Added by Tejaswini
+		executeStep.performAction(SeleniumActions.Click, "","OPToIPSaveBtn");
+		verifications.verify(SeleniumVerifications.Appears, "","PatientCategoryChangePage",false);
+		System.out.println();
+		//Added by Tejaswini
 		executeStep.performAction(SeleniumActions.Click, "","PatientCategoryChangeRatePlanLink");
 		verifications.verify(SeleniumVerifications.Appears, "","ChangePlanHeader",false);
 	}

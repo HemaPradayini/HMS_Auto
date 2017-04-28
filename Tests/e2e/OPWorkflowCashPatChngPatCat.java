@@ -6,9 +6,6 @@ package e2e;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import keywords.SeleniumActions;
-import keywords.SeleniumVerifications;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -44,6 +41,8 @@ import reusableFunctions.Triage;
 import seleniumWebUIFunctions.KeywordExecutionLibrary;
 import seleniumWebUIFunctions.KeywordSelectionLibrary;
 import seleniumWebUIFunctions.VerificationFunctions;
+import supportedKeywords.SeleniumActions;
+import supportedKeywords.SeleniumVerifications;
 
 /**
  * @author Tejaswini
@@ -139,15 +138,18 @@ public class OPWorkflowCashPatChngPatCat {
 		//Navigate To
 		SiteNavigation navigation = new SiteNavigation(AutomationID, DataSet);
 		//Step 1
-		navigation.navigateTo(driver, "DoctorSchedulerLink", "DoctorSchedulerPage");		
+		/*navigation.navigateTo(driver, "DoctorSchedulerLink", "DoctorSchedulerPage");		
 		DoctorScheduler OPWorkFlowDocScheduler = new DoctorScheduler(executeStep,verifications);
 		OPWorkFlowDocScheduler.scheduleDoctorAppointment();
 		PatientArrival OPPatientArrival = new PatientArrival(executeStep,verifications);
-		OPPatientArrival.markPatientAsArrived();		
+		OPPatientArrival.markPatientAsArrived();		*/
+		navigation.navigateTo(driver, "OPRegistrationLink", "OPRegistrationScreen");
+
 		Registration OPReg = new Registration(executeStep, verifications);
 		OPReg.RegisterPatientGenericDetails();
 		OPReg.unCheckPrimarySponsor();
 		OPReg.setBillType();
+		OPReg.visitInformationDetails();
 		OPReg.storeDetails();
 		
 		//2.Go to bill, from order link at the bottom navigate to bill Order screen and order all billable items and save the screen.
@@ -181,7 +183,7 @@ public class OPWorkflowCashPatChngPatCat {
 
 	}
 	
-	@AfterTest
+	//@AfterTest
 	public void closeBrowser(){
 		ReportingFunctions.UpdateTestCaseReport(AutomationID, DataSet, "OPWorkflowCashPatChngPatCat", null, "", "", testCaseStatus);
 		driver.close();
