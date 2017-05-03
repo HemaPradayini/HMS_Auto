@@ -495,7 +495,10 @@ public class Registration {
 		
 		executeStep.performAction(SeleniumActions.Store, "OPRTotalAmount","OPRScreenRegisterTotalAmount");	
 		executeStep.performAction(SeleniumActions.Click, "", "OPRScreenRegisterAndEditBillBtn");
-		verifications.verify(SeleniumVerifications.Appears, "","RegistrationSucccessScreen",false);		
+		verifications.verify(SeleniumVerifications.Appears, "","RegistrationSucccessScreen",false);	
+	    
+	    
+		executeStep.performAction(SeleniumActions.Store, "VisitID","RegSuccessScreenVisitIdField");	// added on 2/5
 	}
     
 	public void storeAndEditBill(){	
